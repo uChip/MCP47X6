@@ -1,0 +1,48 @@
+#######################################
+# Syntax Coloring Map for MCP47X6
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MCP47X6	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+testConnection	KEYWORD2
+begin	KEYWORD2
+setGain	KEYWORD2
+setVReference	KEYWORD2
+saveSettings	KEYWORD2
+powerDown	KEYWORD2
+setOutputLevel	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+MCP47X6_DEFAULT_ADDRESS	LITERAL1
+
+MCP47X6_GAIN_MASK	LITERAL1
+MCP47X6_GAIN_1X	LITERAL1
+MCP47X6_GAIN_2X	LITERAL1
+
+MCP47X6_PWRDN_MASK	LITERAL1
+MCP47X6_AWAKE	LITERAL1
+MCP47X6_PWRDN_1K	LITERAL1
+MCP47X6_PWRDN_100K	LITERAL1
+MCP47X6_PWRDN_500K	LITERAL1
+
+MCP47X6_VREF_MASK	LITERAL1
+MCP47X6_VREF_VDD	LITERAL1
+MCP47X6_VREF_VREFPIN	LITERAL1
+MCP47X6_VREF_VREFPIN_BUFFERED	LITERAL1
+
+MCP47X6_CMD_MASK	LITERAL1
+MCP47X6_CMD_VOLDAC	LITERAL1
+MCP47X6_CMD_VOLALL	LITERAL1
+MCP47X6_CMD_VOLCONFIG	LITERAL1
+MCP47X6_CMD_ALL	LITERAL1
