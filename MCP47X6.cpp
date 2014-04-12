@@ -16,7 +16,7 @@
     Copyright (c) 2013 Chip Schnarel <schnarel@hotmail.com>
 
     Updates should (hopefully) always be available at
-        https://github.com/schnarel/MCP47X6
+        https://github.com/uchip/MCP47X6
 
 	@section  HISTORY
 
