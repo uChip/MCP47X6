@@ -97,6 +97,7 @@ class MCP47X6 {
 	   // NOTE: writing any settings or DAC value
 	   // will awaken device
         bool powerDown(uint8_t pdOutR);
+        bool powerDown(void);
 
     private:
         bool writeConfigReg(uint8_t theConfig);

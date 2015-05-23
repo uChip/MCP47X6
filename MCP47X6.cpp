@@ -131,9 +131,9 @@ bool MCP47X6::setOutputLevel(uint8_t level) {
  * NOTE: writing any settings or DAC output level value
  * returns the DAC to the awake power state.
  */
-//bool MCP47X6::powerDown() {
-//  return writeConfigReg(config);
-//}
+bool MCP47X6::powerDown() {
+  return writeConfigReg(config);
+}
 
 bool MCP47X6::powerDown(uint8_t pdOutR) {
   config = (config & MCP47X6_PWRDN_MASK) | (pdOutR & !MCP47X6_PWRDN_MASK);
