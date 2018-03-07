@@ -111,8 +111,8 @@ bool MCP47X6::saveSettings(void) {
 bool MCP47X6::setOutputLevel(uint16_t level) {
   Wire.beginTransmission(devAddr);
   Wire.write((config | MCP47X6_CMD_VOLALL) & MCP47X6_PWRDN_MASK);
-  Wire.write((uint8_t) ((level>>8) & 0x0F));
-  Wire.write((uint8_t) (level & 0xFF));
+  Wire.write((uint8_t) ((level>>4) & 0xFF));
+  Wire.write((uint8_t) ((level<<4) & 0xF0));
   return (Wire.endTransmission() == 0);
 }
 
@@ -148,4 +148,3 @@ bool MCP47X6::writeConfigReg(uint8_t theConfig) {
   Wire.write(theConfig | MCP47X6_CMD_VOLCONFIG);
   return (Wire.endTransmission() == 0);
 }
- 
